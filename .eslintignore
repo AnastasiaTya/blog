@@ -1,0 +1,24 @@
+# Исключение файлов и папок из проверки ESLint
+
+# Конфигурационные файлы Vite
+*.config.js
+*.config.ts
+
+# Папка node_modules
+node_modules/
+
+# Папки сборки
+dist/
+build/
+
+# Логи
+logs/
+*.log
+
+# Временные файлы
+temp/
+.tmp/
+
+# Файлы конфигурации окружения
+.env
+.env.*.local
