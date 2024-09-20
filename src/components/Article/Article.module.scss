@@ -1,0 +1,99 @@
+.wrapper {
+    width: 938px;
+    height: 140px;
+    background-color: white;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    margin-top: 22px;
+    box-sizing: border-box;
+}
+
+.infoWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleWrap {
+    display: flex;
+    align-items: center;
+}
+
+.tagWrap {
+    padding-top: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.personInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person {
+    margin-right: 10px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #1890ff;
+    margin: 0;
+    margin-right: 12px;
+}
+
+.hearts {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 183%;
+    color: rgba(0, 0, 0, 0.75);
+    margin-left: 5px;
+}
+
+.tag {
+    font-weight: 400;
+    font-size: 12px;
+    color: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.5);;
+    border-radius: 2px;
+    padding: 3px;
+    margin-right: 8px;
+    cursor: auto;
+    min-width: 22px;
+    min-height: 22px;
+}
+
+.personName {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: rgba(0, 0, 0, 0.85);
+    margin: 0;
+}
+
+.date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 183%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.img {
+    height: 46px;
+    width: 46px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 183%;
+    color: rgba(0, 0, 0, 0.75);
+    text-align: left;
+}

@@ -18,11 +18,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "./src"
+    "baseUrl": "./"
   },
   "include": [
     "./src/**/*"
-  ],
+, "hook.ts"  ],
   "exclude": [
     "node_modules"
   ]
