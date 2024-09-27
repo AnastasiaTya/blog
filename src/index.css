@@ -1,40 +1,19 @@
-:root {
+body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   background-color: #EBEEF3;
-
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  box-sizing: border-box;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #1890ff;
   text-decoration: none;
 }
 a:hover {
-  color: #535bf2;
-}
-
-body {
-  /* margin: 0;
-  display: flex;
-  place-items: center; */
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid white;
-  padding: 6px 18px;
-  background-color: white;
-  cursor: pointer;
-}
-button:hover {
-  border-color: #1890FF;
+  color: #1890ff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -43,7 +22,7 @@ button:hover {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #1890ff;
   }
   button {
     background-color: #f9f9f9;

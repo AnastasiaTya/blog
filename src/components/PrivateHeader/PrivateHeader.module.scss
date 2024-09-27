@@ -1,0 +1,68 @@
+.wrapper {
+    height: 80px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px;
+    min-width: 1440px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 18px;
+    line-height: 156%;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.btnOut {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: rgba(0, 0, 0, 0.85);
+    margin-right: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.85);
+    padding: 6px 18px;
+    // background-color: white;
+    cursor: pointer;
+}
+
+.btnCreate {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 156%;
+    color: #52c41a;
+    border: 1px solid #52c41a;
+    border-radius: 4px;
+    padding: 4px 8px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btnUser {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
+
+.img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.flexBtn {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}

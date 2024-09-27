@@ -49,6 +49,10 @@
     margin-right: 12px;
 }
 
+.title:hover {
+    color: #7818FF;
+}
+
 .hearts {
     font-weight: 400;
     font-size: 12px;
@@ -68,6 +72,7 @@
     cursor: auto;
     min-width: 22px;
     min-height: 22px;
+    background-color: white;
 }
 
 .personName {
@@ -88,6 +93,8 @@
 .img {
     height: 46px;
     width: 46px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .text {

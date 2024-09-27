@@ -36,6 +36,13 @@
     align-items: center;
 }
 
+.body img {
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+    margin: 0 auto; 
+  }
+
 .info {
     display: flex;
     flex-direction: column;
@@ -61,6 +68,11 @@
     margin-right: 12px;
 }
 
+.title:hover {
+    color: #7818FF;
+}
+
+
 .hearts {
     font-weight: 400;
     font-size: 12px;
@@ -80,6 +92,7 @@
     cursor: auto;
     min-width: 22px;
     min-height: 22px;
+    background-color: white;
 }
 
 .personName {
@@ -100,6 +113,8 @@
 .img {
     height: 46px;
     width: 46px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .text {
@@ -108,4 +123,40 @@
     line-height: 183%;
     color: rgba(0, 0, 0, 0.75);
     text-align: left;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.myBtn {
+    display: flex;
+    gap: 12px;
+}
+
+.deleteBtn {
+    border: 1px solid #f5222d;
+    border-radius: 5px;
+    width: 78px;
+    height: 31px;
+    font-size: 14px;
+    line-height: 157%;
+    color: #f5222d;
+    background-color: white;
+}
+
+.editBtn {
+    border: 1px solid #52c41a;
+    border-radius: 5px;
+    width: 78px;
+    height: 31px;
+    font-size: 14px;
+    line-height: 157%;
+    color: #52c41a;
+    background-color: white;
+}
+
+.editBtn > a {
+    color: #52c41a;
 }

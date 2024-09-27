@@ -39,6 +39,7 @@
     "react/function-component-definition": "off",
     "import/no-unresolved": [2, { "caseSensitive": false }],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "jsx-a11y/label-has-associated-control": "off",
     "react/destructuring-assignment": [0, { "destructureInSignature": "always" }],
     "import/order": [
       2,

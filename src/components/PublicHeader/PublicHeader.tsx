@@ -1,8 +1,8 @@
 import { Outlet, Link } from 'react-router-dom'
 
-import styles from './Header.module.scss'
+import styles from './PublicHeader.module.scss'
 
-function Header() {
+function PublicHeader() {
   const handleClick = () => {
     window.scrollTo(0, 0)
   }
@@ -13,12 +13,12 @@ function Header() {
           Realworld Blog
         </Link>
         <div>
-          <button type="button" className={styles.btnIn}>
+          <Link to="/sign-in" className={styles.btnIn}>
             Sign In
-          </button>
-          <button type="button" className={styles.btnUp}>
+          </Link>
+          <Link to="/sign-up" className={styles.btnUp}>
             Sign Up
-          </button>
+          </Link>
         </div>
       </div>
       <Outlet />
@@ -26,4 +26,4 @@ function Header() {
   )
 }
 
-export default Header
+export default PublicHeader

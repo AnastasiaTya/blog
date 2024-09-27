@@ -3,22 +3,24 @@ import { nanoid } from 'nanoid'
 import { useEffect } from 'react'
 import Markdown from 'react-markdown'
 
-import { fetchArticle, onLoading, removeArticle } from '../store/slice/ArticlesSlice'
+import { fetchArticle, onLoading } from '../store/slice/ArticlesSlice'
 import { useAppDispatch, useAppSelector } from '../hook'
+import DeleteBtn from '../components/DeleteBtn'
 
 import styles from './Pages.module.scss'
 
 const ArticlePage = () => {
   const article = useAppSelector((state) => state.articles.article)
+  const user = useAppSelector((state) => state.user.user.username)
   const { slug } = useParams()
   const dispatch = useAppDispatch()
 
   useEffect(() => {
     dispatch(onLoading())
     dispatch(fetchArticle(slug))
-    return () => {
-      dispatch(removeArticle())
-    }
+    // return () => {
+    //   dispatch(removeArticle())
+    // }
   }, [slug, dispatch])
 
   if (!article) return null
@@ -82,8 +84,18 @@ const ArticlePage = () => {
             <img src={article.author.image} alt="avatar" className={styles.img} />
           </div>
         </div>
-        <p className={styles.text}>{article.description}</p>
-        <Markdown>{article.body}</Markdown>
+        <div className={styles.description}>
+          <p className={styles.text}>{article.description}</p>
+          {article.author.username === user && (
+            <div className={styles.myBtn}>
+              <DeleteBtn slug={article.slug} />
+              <button type="button" className={styles.editBtn}>
+                <Link to={`/article/${article.slug}/edit`}>Edit</Link>
+              </button>
+            </div>
+          )}
+        </div>
+        <Markdown className={styles.body}>{article.body}</Markdown>
       </div>
     </div>
   )
