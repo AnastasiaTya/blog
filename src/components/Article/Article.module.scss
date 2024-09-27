@@ -103,4 +103,7 @@
     line-height: 183%;
     color: rgba(0, 0, 0, 0.75);
     text-align: left;
+    white-space: nowrap; 
+    overflow: hidden;    
+    text-overflow: ellipsis; 
 }
